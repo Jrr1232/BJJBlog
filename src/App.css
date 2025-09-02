@@ -6,6 +6,7 @@
     width: 100vw;
     height: 105vh;
     background-color: rgba(57, 229, 27, 0.16);
+    overflow-x: none;
   }
 
 
