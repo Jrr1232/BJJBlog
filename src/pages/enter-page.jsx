@@ -1,18 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function enterpage() {
-
+function Enterpage() {
     return (
-
-        <>
-            <div id="enter-page-container">
-                <div class="content">
-                    <h2 class="text-shadows">Blue Belt Chronicles</h2>
-                </div>
-                <button id="enter">Enter</button>
+        <div id="enter-page-container">
+            <div className="content">
+                <h2 className="text-shadows">Blue Belt Chronicles</h2>
             </div>
-        </>
-    )
+            <Link to="/homepage" id="enter">Enter</Link>
+        </div>
+    );
 }
 
-export default enterpage
+export default Enterpage;
