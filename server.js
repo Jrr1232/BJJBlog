@@ -1,21 +1,20 @@
 import express from "express";
 import path from "path";
-import { fileURLToPath } from "url";  // <-- add this
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-// Serve static files from the Vite build
-app.use(express.static(path.join(__dirname, 'dist')));
+// Serve static files
+app.use(express.static(path.join(__dirname, "dist")));
 
+// Catch-all route for React Router
 // Handle client-side routing
-app.get('/:path(.*)', (req, res) => {
+app.get('/*path', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
-// Listen on Heroku port
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
