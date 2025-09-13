@@ -44,7 +44,7 @@ function Homepage() {
 
                 <div id="bjjhq-container">
                     <img
-                        src="https://product_images_bjj.s3.amazonaws.com/sc-rg-028/product_alternate/05.jpg"
+                        src="https://product_images_bjj.s3.amazonaws.com/pg-gi-013/product/pg-gi-013.jpg"
                         id="bjj-hq"
                         alt="BJJ gi / product preview from BJJHQ"
                         loading="lazy"
