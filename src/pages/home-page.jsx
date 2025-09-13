@@ -53,9 +53,9 @@ function Homepage() {
 
             </div>
             <div id="black-belt-container">
-                <img className="black-belt" src="/assets/ChatGPT Image Sep 12, 2025, 10_30_00 PM.png" alt="black belt" />
-                <img className="black-belt" src="/assets/ChatGPT Image Sep 12, 2025, 10_30_00 PM.png" alt="black belt" />
-                <img className="black-belt" src="/assets/ChatGPT Image Sep 12, 2025, 10_30_00 PM.png" alt="black belt" />
+                <img className="black-belt" src="/ChatGPT Image Sep 12, 2025, 10_30_00 PM.png" alt="black belt" />
+                <img className="black-belt" src="/ChatGPT Image Sep 12, 2025, 10_30_00 PM.png" alt="black belt" />
+                <img className="black-belt" src="/ChatGPT Image Sep 12, 2025, 10_30_00 PM.png" alt="black belt" />
             </div>
 
         </div>
