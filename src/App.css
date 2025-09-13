@@ -4,22 +4,25 @@
   #root {
     text-align: center;
     width: 100vw;
-    height: 105vh;
+    height: 155vh;
     background-color: rgba(57, 229, 27, 0.16);
     overflow-x: none;
   }
 
 
   #enter {
-    margin-top: 100%;
     background-color: #f6aca2;
     border: black solid 1px;
     border-radius: 0;
     box-shadow: 10px 10px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 400;
+    color: black;
+    width: 100px;
   }
+
+
 
   #enter:hover {
     background-color: antiquewhite;
@@ -48,7 +51,8 @@
     color: var(--color-primary);
     animation: shadows 1.8s ease-in infinite;
     letter-spacing: 0.4rem;
-    margin-top: 10%;
+    margin-top: 20%;
+    padding-bottom: 40%;
   }
 
   /*Navbar */
@@ -66,7 +70,8 @@
     font-family: "montserrat", sans-serif;
     color: #4A4A4A;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
     margin-top: 10%;
   }
 
@@ -89,18 +94,21 @@
   }
 
   #scrolltext-bottom {
-    padding-bottom: 15%;
+
+    padding-bottom: 5%;
   }
 
   .blog-container {
-    padding-top: 10%;
-    margin-top: 10%;
-    height: 70vh;
+    padding-top: 5%;
+    margin-top: 0%;
+    height: 50vh;
     align-items: center;
     display: flex;
     overflow-y: auto;
     overflow-x: none;
     font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
 
   }
 
@@ -141,7 +149,68 @@
 
   }
 
+  #the-gentle-art-container {
+    margin-top: 20%;
+    padding-bottom: 20%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #blog-post-title {
+    margin-top: 40%;
+  }
+
+  #bjj-hq {
+    width: 80%;
+    margin-top: 30%;
+    border: black solid 1px;
+    box-shadow: 10px 10px;
+    margin-bottom: 20%;
+  }
+
+  #click-here-link {
+    color: red;
+    font-family: monospace;
+    letter-spacing: 0.3rem;
+    font-size: larger;
+  }
+
+  #black-belt-container {
+    scrollbar-width: none;
+    /* For Firefox */
+    margin-top: 7%;
+    gap: 50px;
+    /* Space between images */
+
+  }
+
+  .black-belt {
+    width: 20%;
+    top: 10%;
+    margin-right: 50px;
+    animation: float 10s linear infinite;
+
+  }
+
+
   /* Animations */
+
+  @keyframes float {
+    0% {
+      transform: translateX(100%) translateY(0%);
+    }
+
+    50% {
+      transform: translateX(-250%) translateY(20%);
+    }
+
+    100% {
+      transform: translateX(-250%) translateY(0%);
+    }
+  }
+
   @keyframes shadows {
     0% {
       text-shadow: none;

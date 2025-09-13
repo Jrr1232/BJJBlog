@@ -8,6 +8,7 @@ import './index.css'
 const App = lazy(() => import('./App.jsx'));
 const Enterpage = lazy(() => import('./pages/enter-page.jsx'))
 const Homepage = lazy(() => import('./pages/home-page.jsx'))
+const TheGentleArt = lazy(() => import('./pages/the-gentle-art.jsx'))
 const Error = () => <div>Error loading the page!</div>;
 
 // Create Router with lazy-loaded components
@@ -19,7 +20,9 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Homepage /> },
       { path: 'enter', element: <Enterpage /> },
-      { path: 'homepage', element: <Homepage /> }
+      { path: 'homepage', element: <Homepage /> },
+      { path: 'gentleart', element: <TheGentleArt /> }
+
     ]
   },
 ]);
